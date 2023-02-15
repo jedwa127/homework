@@ -46,10 +46,10 @@
 				echo "<h3>Flipped $heads heads in a row in " . count($toss_total) . " flips:</h3>";
 				foreach($toss_total as $t) {
 					if ($t == 0) {
-						echo "<img src=\"heads.jpg\" alt=\"Heads\" style=\"width:80px;height:80px;\"> ";
+						echo "<img src=\"images/heads.jpg\" alt=\"Heads\" style=\"width:80px;height:80px;\"> ";
 					}
 					else {
-						echo "<img src=\"tails.jpg\" alt=\"Tails\" style=\"width:80px;height:80px;\"> ";
+						echo "<img src=\"images/tails.jpg\" alt=\"Tails\" style=\"width:80px;height:80px;\"> ";
 					}				}
 			}
 		?>
