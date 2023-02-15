@@ -36,7 +36,7 @@
 				for ($t = 0; $t != $heads; $t) {
 					$toss = mt_rand(0, 1);
 					if ($toss == 0) {
-						$t = $t + 1;
+						$t++;
 					}
 					else {
 						$t = $t * 0;
