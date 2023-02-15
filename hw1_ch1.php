@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<?php
-			$change = 786.5; // Amount of change due back
+			$change = 786.87; // Amount of change due back
 			echo "You are due back $change cents in change.<br>";
 				if ($change < 0) { // Checks if $change is a negative number
 					exit("You can't recieve negative change, that's just paying someone I guess."); // Exit program and print if $change is a negative number
