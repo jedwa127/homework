@@ -40,10 +40,9 @@
 					$isbn = str_replace("X", "10", $isbn);
 				}
 				for ($x = 10; $x > 0; $x--) {
-					$n = substr($isbn, (10 - $x), floor((1 / $x) + 1)) * $x;
-					$n_total[] = $n;
+					$n += substr($isbn, (10 - $x), floor((1 / $x) + 1)) * $x;
 				}
-				if (array_sum($n_total) % 11 == 0) {
+				if ($n % 11 == 0) {
 					return TRUE;
 				}
 			}
