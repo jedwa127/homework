@@ -36,9 +36,6 @@
 				}
 			}
 			function isbn_calc($isbn) {
-				if (substr($isbn, 9, 1) == "X") {	
-					$isbn = str_replace("X", "10", $isbn);
-				}
 				for ($x = 10; $x > 0; $x--) {
 					$n += substr($isbn, (10 - $x), floor((1 / $x) + 1)) * $x;
 				}
